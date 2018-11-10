@@ -1,0 +1,74 @@
+.cards {
+    display: flex;
+    & div.my-card1 {
+        background-color: #5DC2CA;
+    }
+
+    & div.my-card2 {
+        background-color: #9773CD;
+    }
+
+    & div.my-card3 {
+        background-color: rgb(211, 94, 64);
+    }
+
+    & .my-card {
+        width: 33.333%;
+        padding: 10vh 2vw;
+
+        & .text-card {
+            text-align: center;
+
+            & span {
+                font-weight: 700;
+                font-size: 2vw;
+            }
+
+            & p {
+                margin-bottom: 2vh;
+            }
+            
+            
+
+            & img {
+                width: 20vh;
+                margin-bottom: 3vh;
+            }
+
+            & button {
+                height: 10vh;
+                width: 30vh;
+                font-size: 4vh;
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .cards {
+        display: block;
+        .my-card {
+            width: 100%;
+            padding: 5vw 10vw;
+            background-color: rgb(199, 194, 194);
+            border-color: rgb(122, 122, 122);
+
+            & .text-card {
+
+                & span {
+                    font-size: 4vw;
+                    margin-bottom: 100vh;
+                }
+
+                & p {
+                    font-size: 3vw;
+                    margin-bottom: 5vh;
+                }
+
+                
+            }
+        }
+    }
+}

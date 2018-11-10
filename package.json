@@ -1,0 +1,24 @@
+{
+  "name": "projvenda",
+  "version": "1.0.0",
+  "description": "\"Projeto de vendas site de acedemia\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kennety Anderson e Bruno Barbosa",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.14.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "colors": "^1.3.2",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.3.10",
+    "nodemon": "^1.18.6",
+    "path": "^0.12.7",
+    "sass": "^1.14.3"
+  }
+}

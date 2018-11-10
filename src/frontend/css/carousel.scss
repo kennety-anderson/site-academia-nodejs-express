@@ -1,0 +1,72 @@
+
+.carousel {
+    & *{
+        font-family: Raleway;
+    }
+
+    & .text {
+        font-size: 3.5vw;
+
+        & .cabecalho{
+            color: #313131;
+            margin-bottom: 0px;
+
+            & ~ * {
+                font-size: 2vw;
+                color: #313131;
+            }
+            
+        }
+    }
+
+    & #carouselExampleIndicators .carousel-inner{
+        & .carousel-1 .text {
+            top: 10%;
+            left: 50%;
+
+            & .cabecalho{
+                color: #313131;
+
+                & ~ div button{
+                    margin-left: 1vw;
+
+                    & + button {
+                        margin-left: 2vw;
+                    }
+                   
+                }
+                
+            }
+        }
+
+        & .carousel-2 .text {
+            top: 13%;
+            left: 10%;
+            width: 42%;
+
+            & .cabecalho{
+                color: #313131;
+
+                & ~ * {
+                    font-size: 2vw;
+                    color: #313131;
+                }
+            }
+        }
+
+        & .carousel-3 .text {
+            top: 10%;
+            left: 50%;
+
+            & .cabecalho{
+                color: #313131;
+
+                & ~ * {
+                    font-size: 2vw;
+                    color: #313131;
+                }
+                
+            }
+        }
+    }
+}

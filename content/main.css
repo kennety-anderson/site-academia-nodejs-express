@@ -1,0 +1,11 @@
+.teste {
+  background-color: red;
+}
+.teste .teste {
+  background-color: blue;
+}
+.teste .teste-teste {
+  color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */
