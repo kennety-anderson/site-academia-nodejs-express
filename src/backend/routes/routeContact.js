@@ -14,7 +14,8 @@ app.post('/contato', (req, res) => {
 
     let contato = new Contato({
         nome: req.body.nome,
-        email: req.body.email
+        email: req.body.email,
+        mensagem: req.body.mensagem
     });
 
 
@@ -25,9 +26,11 @@ app.post('/contato', (req, res) => {
         if (err) {
             return console.log(`${err}`.red);
         }
+
         res.render(path.join(__dirname, '../../frontend/views/contato.hbs'), {
-            message: 'Mensagem enviada com sucesso!'
+            message: `Obrigado ${contato.nome} sua mensgem foi enviada com sucesso.`
         });
+
         console.log(`Gravado com sucesso no banco de dodos: ${contatoDB}`.green);
     });
 });

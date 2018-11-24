@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+
+    <section>
+
+      <h3> {{ status }} </h3>
+        <form action="/admin" method="post">
+            <label for="user">&nbsp;&nbsp;&nbsp;Usuario:</label>
+            <input type="text" name="user" placeholder="Usuario" id="user">
+            <label for="password">&nbsp;&nbsp;&nbsp;Password:</label>
+            <input type="password" name="password" placeholder="Senha" id="password"><br>
+            <!-- <textarea name="mensagem" placeholder="Digite sua mensagem" style="height: 100px; width: 200px; margin-top: 30px; margin-left: 70px;"></textarea> -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+  </body>
+</html>
