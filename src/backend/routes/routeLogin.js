@@ -70,6 +70,7 @@ app.post('/admin', (req, res) => {
         //                 .send('<h1>Page not found 404</h1>');
         //         }
 
+
         //         let list = contatosDB.map((item, index) => {
         //             return `<li>${index}: ${item}`;
         //         });
@@ -90,7 +91,7 @@ app.post('/admin', (req, res) => {
                     contatoDB
                 });
                 
-            });
+            })
 
     });
 });
