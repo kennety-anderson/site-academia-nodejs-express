@@ -1,0 +1,9 @@
+.teste{
+    background-color: red;
+    & .teste{
+        background-color: blue;
+        &-teste {
+            color: blue;
+        }
+    }
+}

@@ -1,0 +1,305 @@
+.btn-default {
+  background-color: transparent;
+  background-color: #918e8e;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+  padding: 1vw 2vw;
+  border: 1.5px solid #918e8e;
+}
+.btn-default:hover {
+  background-color: transparent;
+  border: 1.5px solid #918e8e;
+  color: #918e8e;
+}
+.btn-default:focus {
+  border: 1.5px solid #918e8e;
+}
+.btn-default:active {
+  border: 1.5px solid transparent;
+  background-color: #918e8e;
+  color: white;
+}
+
+.btn-default-blue {
+  background-color: #2d7be0;
+  border-color: #2d7be0;
+}
+.btn-default-blue:hover {
+  border-color: #2d7be0;
+  color: #2d7be0;
+}
+.btn-default-blue:focus {
+  border: 1.5px solid #2d7be0;
+}
+.btn-default-blue:active {
+  border: 1.5px solid transparent;
+  background-color: #2d7be0;
+  color: white;
+}
+
+.btn-default-green {
+  background-color: #459e22;
+  border-color: #459e22;
+}
+.btn-default-green:hover {
+  border-color: #459e22;
+  color: #459e22;
+}
+.btn-default-green:focus {
+  border: 1.5px solid #459e22;
+}
+.btn-default-green:active {
+  border: 1.5px solid transparent;
+  background-color: #459e22;
+  color: white;
+}
+
+.btn-default-red {
+  background-color: #d84444;
+  border-color: #d84444;
+}
+.btn-default-red:hover {
+  border-color: #d84444;
+  color: #d84444;
+}
+.btn-default-red:focus {
+  border: 1.5px solid #d84444;
+}
+.btn-default-red:active {
+  border: 1.5px solid transparent;
+  background-color: #d84444;
+  color: white;
+}
+
+body {
+  user-select: none;
+}
+
+.icon {
+  width: 3vw;
+  height: 3vw;
+}
+.icon-g {
+  width: 10vw;
+  height: 10vw;
+}
+
+.carousel-indicators {
+  bottom: 0vw;
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  color: #44444444;
+  margin: 3vw;
+}
+
+button, button:focus, button:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 0px 0px;
+}
+.menu div {
+  display: inline;
+}
+.menu img {
+  width: 40vw;
+  height: 17vw;
+  max-width: 200px;
+  max-height: 50px;
+  margin: 15px 2vw;
+}
+.menu .menu-right input[type=checkbox] {
+  display: none;
+}
+.menu .menu-right .menu-label {
+  font-size: 40px;
+  cursor: pointer;
+  right: 10px;
+  display: none;
+  align-self: center;
+}
+.menu .menu-right ul {
+  display: inline-flex;
+  margin-bottom: 0px;
+}
+.menu .menu-right ul a {
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+.menu .menu-right ul a li {
+  list-style: none;
+  font-size: 1.4375rem;
+  font-family: roboto;
+  color: #7d8689;
+}
+.menu .menu-right ul a li::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: #afafb1;
+  bottom: -30px;
+  transition: width 0.3s;
+}
+.menu .menu-right ul a:hover li::before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .menu .modal-menu {
+    background-color: #ececec;
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    z-index: 16;
+    right: 0px;
+    top: 80px;
+    overflow: hidden;
+  }
+  .menu .menu-right .modal-menu ul {
+    display: none;
+  }
+  .menu .menu-right .menu-label {
+    font-size: 30px;
+    display: inline-block;
+  }
+  .menu .menu-right #input-check:checked + .modal-menu {
+    display: block;
+    height: 100%;
+    transition: height 0.5s;
+  }
+  .menu .menu-right #input-check:checked + .modal-menu ul {
+    display: block;
+  }
+  .menu .menu-right #input-check:checked + .modal-menu ul li:active:before {
+    width: 100%;
+    transition: width 0.05s;
+  }
+}
+.carousel * {
+  font-family: Raleway;
+}
+.carousel .text {
+  font-size: 3.5vw;
+}
+.carousel .text .cabecalho {
+  color: #313131;
+  margin-bottom: 0px;
+}
+.carousel .text .cabecalho ~ * {
+  font-size: 2vw;
+  color: #313131;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-1 .text {
+  top: 10%;
+  left: 50%;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-1 .text .cabecalho {
+  color: #313131;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-1 .text .cabecalho ~ div button {
+  margin-left: 1vw;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-1 .text .cabecalho ~ div button + button {
+  margin-left: 2vw;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-2 .text {
+  top: 13%;
+  left: 10%;
+  width: 42%;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-2 .text .cabecalho {
+  color: #313131;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-2 .text .cabecalho ~ * {
+  font-size: 2vw;
+  color: #313131;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-3 .text {
+  top: 10%;
+  left: 50%;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-3 .text .cabecalho {
+  color: #313131;
+}
+.carousel #carouselExampleIndicators .carousel-inner .carousel-3 .text .cabecalho ~ * {
+  font-size: 2vw;
+  color: #313131;
+}
+
+.cards {
+  display: flex;
+}
+.cards div.my-card1 {
+  background-color: #5DC2CA;
+}
+.cards div.my-card2 {
+  background-color: #9773CD;
+}
+.cards div.my-card3 {
+  background-color: #d35e40;
+}
+.cards .my-card {
+  width: 33.333%;
+  padding: 10vh 2vw;
+}
+.cards .my-card .text-card {
+  text-align: center;
+}
+.cards .my-card .text-card span {
+  font-weight: 700;
+  font-size: 2vw;
+}
+.cards .my-card .text-card p {
+  margin-bottom: 2vh;
+}
+.cards .my-card .text-card img {
+  width: 20vh;
+  margin-bottom: 3vh;
+}
+.cards .my-card .text-card button {
+  height: 10vh;
+  width: 30vh;
+  font-size: 4vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .cards {
+    display: block;
+  }
+  .cards .my-card {
+    width: 100%;
+    padding: 5vw 10vw;
+    background-color: #c7c2c2;
+    border-color: #7a7a7a;
+  }
+  .cards .my-card .text-card span {
+    font-size: 4vw;
+    margin-bottom: 100vh;
+  }
+  .cards .my-card .text-card p {
+    font-size: 3vw;
+    margin-bottom: 5vh;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
